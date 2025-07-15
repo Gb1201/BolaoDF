@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./Login.module.css";
+import styles from "./Auth.module.css";
 
 const Login: React.FC = () => {
   const [usuario, setUsuario] = useState("");
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
         </button>
 
         <p
-          className={styles.signup}
+          className={styles.link}
           onClick={() => navigate("/signup")}
           role="button"
           tabIndex={0}
@@ -68,6 +68,7 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+
 
 
 
